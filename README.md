@@ -28,7 +28,16 @@ You can check the console for the most recent values as they are printed there w
 	1. Add 'Soul_Gem_Scaling.esp' to your Plugins.txt
 2. Copy SoulGem_Level_Scaling.ini to `\Oblivion Remastered\OblivionRemastered\Binaries\Win64\MadConfigs`
 
+### Uninstallation
+0. This mod alters Game Settings. If you need to uninstall this, run the following console commands after you've deleted the plugin file. 
+	* SetGameSetting iSoulLevelValuePetty 150
+	* SetGameSetting iSoulLevelValueLesser 300
+	* SetGameSetting iSoulLevelValueCommon 800
+	* SetGameSetting iSoulLevelValueGreater 1200
+	* SetGameSetting iSoulLevelValueGrand 1600
+
+
 ## Credits
 
 1. Utilizes ObScript Extender created by [MadAborModding](https://next.nexusmods.com/profile/MadAborModding)
-2. Utilized MCM created by [MadAborModding](https://next.nexusmods.com/profile/MadAborModding)
+2. Utilizes MCM created by [MadAborModding](https://next.nexusmods.com/profile/MadAborModding)
