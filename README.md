@@ -2,15 +2,15 @@
 
 # Changelog
 1. 1.0
-	a. Initial Release
+	* Initial Release
 2. 1.0a
-	a. Fixed initial Release
+	* Fixed initial Release
 3. 1.1
-	a. Added MCM functionality for player to configure the scaling factor that the Soul Gem level scaling uses.
+	* Added MCM functionality for player to configure the scaling factor that the Soul Gem level scaling uses.
 4. 1.1a 
-	a. Fixed Dependency Issue
+	* Fixed Dependency Issue
 5. 1.2
-	a. Added scaling for Enchant Charge level 
+	* Added scaling for Enchant Charge level 
 
 ## Description
 ![Charge Level](/image/Grand_Soul_Gem.png "Grand Soul Gem")
@@ -29,12 +29,12 @@
 ### Installation
 0. Install Prerequisites
 1. Copy Soul_Gem_Scaling.esp to `\Oblivion Remastered\OblivionRemastered\Content\Dev\ObvData\Data`
-	1. Add 'Soul_Gem_Scaling.esp' to your Plugins.txt
+	1. Add `Soul_Gem_Scaling.esp` to your Plugins.txt
 2. Copy SoulGem_Level_Scaling.ini to `\Oblivion Remastered\OblivionRemastered\Binaries\Win64\MadConfigs`
 
 ### Uninstallation
 0. This mod alters Game Settings. If you need to uninstall this, do the following after the plugin is removed.
-	1. Download uninstall.txt from GitHub (Link)
+	1. Download uninstall.txt from GitHub [Link](https://github.com/justv316/SoulGem_Level_Scaling/blob/b624726ef6124cffd85467e973121e6b942aa70a/src/OblivionRemastered/uninstall.txt)
 	2. Copy the txt file to `\Oblivion Remastered\OblivionRemastered\Binaries`
 	3. While In-game, press the ~ key to open the console, type `exec uninstall` and press enter.
 	4. The default settings have now been restored
