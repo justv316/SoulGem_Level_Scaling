@@ -1,0 +1,10 @@
+SetGameSetting iSoulLevelValuePetty 150
+SetGameSetting iSoulLevelValueLesser 300
+SetGameSetting iSoulLevelValueCommon 800
+SetGameSetting iSoulLevelValueGreater 1200
+SetGameSetting iSoulLevelValueGrand 1600
+SetGameSetting fEnchantPettyLimit 15
+SetGameSetting fEnchantLesserLimit 25
+SetGameSetting fEnchantCommonLimit 40
+SetGameSetting fEnchantGreaterLimit 60
+SetGameSetting fEnchantGrandLimit 85
