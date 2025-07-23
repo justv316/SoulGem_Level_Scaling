@@ -1,15 +1,15 @@
 # Soul Gem Level Scaling
 
 # Changelog
-1. 1.0
+1.0
 	* Initial Release
-2. 1.0a
+1.0a
 	* Fixed initial Release
-3. 1.1
+1.1
 	* Added MCM functionality for player to configure the scaling factor that the Soul Gem level scaling uses.
-4. 1.1a 
+1.1a 
 	* Fixed Dependency Issue
-5. 1.2
+1.2
 	* Added scaling for Enchant Charge level 
 
 ## Description
