@@ -11,6 +11,8 @@
 	* Fixed Dependency Issue
 1.2
 	* Added scaling for Enchant Charge level 
+1.3
+	* Added scaling for the gold cost of enchantments
 
 ## Description
 ![Charge Level](/image/Grand_Soul_Gem.png "Grand Soul Gem")

@@ -25,6 +25,8 @@ float fNewEnchantLesserLimit
 float fNewEnchantCommonLimit
 float fNewEnchantGreaterLimit
 float fNewEnchantGrandLimit
+float fDefaultGoldMult
+float fNewGoldMult
 float fTimer
 short iCheckedMultiplier
 short iLastCheckedMutliplier
@@ -61,6 +63,9 @@ Begin GameMode
 	if fDefaultEnchantGrandLimit != 85.0
 		set fDefaultEnchantGrandLimit to 85.0
 	endif
+	if fDefaultGoldMult != 10.0
+		set fDefaultGoldMult to 10.0
+	endif
 	set iPlayerLevel to Player.GetLevel
 	set iCheckedMultiplier to SGiGlobalSoulScalingFactor
 	if iPlayerLevel > iLastCheckedLevel
@@ -74,6 +79,7 @@ Begin GameMode
 		set fNewEnchantCommonLimit to fDefaultEnchantCommonLimit + iPlayerLevel * 7.2 * iCheckedMultiplier
 		set fNewEnchantGreaterLimit to fDefaultEnchantGreaterLimit + iPlayerLevel * 10.8 * iCheckedMultiplier
 		set fNewEnchantGrandLimit to fDefaultEnchantGrandLimit + iPlayerLevel * 15.3 * iCheckedMultiplier
+		set fNewGoldMult to fDefaultGoldMult + iPlayerLevel
 		if SGiGlobalNewSoulValuePetty != iNewSoulValuePetty
 			set SGiGlobalNewSoulValuePetty to iNewSoulValuePetty
 			set fTimer to 1
@@ -114,6 +120,10 @@ Begin GameMode
 			set SGiGlobalNewEnchantGrandLimit to fNewEnchantGrandLimit
 			set fTimer to 1
 		endif
+		if fGlobalNewGoldMult != fNewGoldMult
+			set fGlobalNewGoldMult to fNewGoldMult
+			set fTimer to 1
+		endif
 		if fTimer > 0
 			set fTimer to fTimer - GetSecondsPassed
 		else
@@ -127,6 +137,7 @@ Begin GameMode
 			message "ConsoleCommand SetGameSetting fEnchantCommonLimit	 ((GetGlobalValue SGiGlobalNewEnchantCommonLimit))"
 			message "ConsoleCommand SetGameSetting fEnchantGreaterLimit ((GetGlobalValue SGiGlobalNewEnchantGreaterLimit))"
 			message "ConsoleCommand SetGameSetting fEnchantGrandLimit ((GetGlobalValue SGiGlobalNewEnchantGrandLimit))"
+			message "ConsoleCommand SetGameSetting fEnchantmentGoldMult ((GetGlobalValue fGlobalNewGoldMult))"
 			set iLastCheckedLevel to iPlayerLevel
 			set iLastCheckedMutliplier to iCheckedMultiplier
 		endif
@@ -142,6 +153,7 @@ Begin GameMode
 		set fNewEnchantCommonLimit to fDefaultEnchantCommonLimit + iPlayerLevel * 7.2 * iCheckedMultiplier
 		set fNewEnchantGreaterLimit to fDefaultEnchantGreaterLimit + iPlayerLevel * 10.8 * iCheckedMultiplier
 		set fNewEnchantGrandLimit to fDefaultEnchantGrandLimit + iPlayerLevel * 15.3 * iCheckedMultiplier
+		set fNewGoldMult to fDefaultGoldMult + iPlayerLevel
 		if SGiGlobalNewSoulValuePetty != iNewSoulValuePetty
 			set SGiGlobalNewSoulValuePetty to iNewSoulValuePetty
 			set fTimer to 1
@@ -182,6 +194,10 @@ Begin GameMode
 			set SGiGlobalNewEnchantGrandLimit to fNewEnchantGrandLimit
 			set fTimer to 1
 		endif
+		if fGlobalNewGoldMult != fNewGoldMult
+			set fGlobalNewGoldMult to fNewGoldMult
+			set fTimer to 1
+		endif
 		if fTimer > 0
 			set fTimer to fTimer - GetSecondsPassed
 		else
@@ -195,6 +211,7 @@ Begin GameMode
 			message "ConsoleCommand SetGameSetting fEnchantCommonLimit	 ((GetGlobalValue SGiGlobalNewEnchantCommonLimit))"
 			message "ConsoleCommand SetGameSetting fEnchantGreaterLimit ((GetGlobalValue SGiGlobalNewEnchantGreaterLimit))"
 			message "ConsoleCommand SetGameSetting fEnchantGrandLimit ((GetGlobalValue SGiGlobalNewEnchantGrandLimit))"
+			message "ConsoleCommand SetGameSetting fEnchantmentGoldMult ((GetGlobalValue fGlobalNewGoldMult))"
 			set iLastCheckedMutliplier to iCheckedMultiplier
 		endif
 	endif
