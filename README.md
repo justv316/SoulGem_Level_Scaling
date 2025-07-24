@@ -3,14 +3,19 @@
 # Changelog
 1.0
 * Initial Release
+
 1.0a
 * Fixed initial Release
+
 1.1
 * Added MCM functionality for player to configure the scaling factor that the Soul Gem level scaling uses.
+
 1.1a 
 * Fixed Dependency Issue
+
 1.2
 * Added scaling for Enchant Charge level 
+
 1.3
 * Added scaling for the gold cost of enchantments
 
